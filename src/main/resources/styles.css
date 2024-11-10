@@ -1,0 +1,22 @@
+/* Center the window content and set a pleasant background color */
+.root {
+    -fx-background-color: #e0f7fa;
+}
+
+/* Style the card label text */
+.card-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00796b;
+    -fx-padding: 5px;
+}
+
+/* Style the refresh button */
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-font-weight: bold;
+    -fx-background-color: #00796b;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+}
