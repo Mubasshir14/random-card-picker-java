@@ -21,7 +21,7 @@ public class RandomCardDisplay extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // Set up the main layout
+        // This is the root container of the UI. This allows children to be stacked on top each other
         StackPane root = new StackPane();
         root.setAlignment(Pos.CENTER);
 
@@ -74,8 +74,11 @@ public class RandomCardDisplay extends Application {
             }
 
             ImageView cardView = new ImageView(cardImage);
-            cardView.setFitWidth(150);  // Adjust the card size as needed
+            cardView.setFitWidth(150);
             cardView.setFitHeight(225);
+
+            // Add shadow effect to card image
+            cardView.getStyleClass().add("card-view");
 
             // Create a label for the card number
             Label cardLabel = new Label("Card No." + cardNumber);
